@@ -17,13 +17,6 @@
     <stop offset="0%" stop-color="#0F101A"/>
     <stop offset="100%" stop-color="#07080D"/>
   </radialGradient>
-  <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%" stop-color="#00F2FE" stop-opacity="0"/>
-    <stop offset="45%" stop-color="#00F2FE" stop-opacity="0.06"/>
-    <stop offset="50%" stop-color="#00FF87" stop-opacity="0.65"/>
-    <stop offset="55%" stop-color="#00F2FE" stop-opacity="0.06"/>
-    <stop offset="100%" stop-color="#9b51e0" stop-opacity="0"/>
-  </linearGradient>
   <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
     <rect width="4" height="1" fill="#00F2FE" opacity="0.03"/>
   </pattern>
@@ -68,37 +61,28 @@
     .head   { font-family: 'Courier New', Consolas, monospace; font-size: 17px; fill: #00FF87; font-weight: bold; }
     .accent { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #00FF87; font-weight: bold; }
     text, tspan { white-space: pre; }
-
     .term-label { font-family: 'Courier New', Consolas, monospace; font-size: 12px; fill: #64748B; letter-spacing: 0.5px; }
     .scan-label { font-family: 'Courier New', Consolas, monospace; font-size: 10px; fill: #00F2FE; letter-spacing: 1px; }
     .panel-title { font-family: 'Courier New', Consolas, monospace; font-size: 11px; fill: #00F2FE; letter-spacing: 2px; opacity: 0.8; }
     .cursor-blink { fill: #00FF87; }
-    
-    a:hover text, a:hover .value { fill: #00FF87; text-decoration: underline; }
   </style>
 </defs>
-
 <rect width="1180" height="610" rx="18" fill="url(#bgGlow)"/>
 <rect width="1180" height="610" rx="18" fill="url(#scanlines)"/>
-
 <g id="titlebar">
   <rect x="3" y="3" width="1174" height="34" rx="16" fill="#0A0B10" fill-opacity="0.95"/>
-  <circle cx="24" cy="20" r="5" fill="#FF5F56"><animate attributeName="opacity" values="1;0.5;1" dur="4s" repeatCount="indefinite"/></circle>
-  <circle cx="42" cy="20" r="5" fill="#FFBD2E"><animate attributeName="opacity" values="1;0.5;1" dur="4s" begin="0.3s" repeatCount="indefinite"/></circle>
-  <circle cx="60" cy="20" r="5" fill="#27C93F"><animate attributeName="opacity" values="1;0.5;1" dur="4s" begin="0.6s" repeatCount="indefinite"/></circle>
+  <circle cx="24" cy="20" r="5" fill="#FF5F56"/>
+  <circle cx="42" cy="20" r="5" fill="#FFBD2E"/>
+  <circle cx="60" cy="20" r="5" fill="#27C93F"/>
   <text x="590" y="25" text-anchor="middle" class="term-label">vinks@arch ~ % ./cyber-profile.sh --v2.6</text>
-  <circle cx="1122" cy="20" r="4" fill="#00F2FE">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
-  </circle>
+  <circle cx="1122" cy="20" r="4" fill="#00F2FE"/>
   <text x="1132" y="24" class="scan-label">ONLINE</text>
 </g>
-
 <g transform="translate(0,38)">
   <rect x="14" y="26" width="488" height="468" rx="14" fill="#0A0B10" fill-opacity="0.5" stroke="url(#borderGrad)" stroke-width="1.5" opacity="0.4"/>
   <rect x="508" y="10" width="655" height="500" rx="14" fill="#0A0B10" fill-opacity="0.5" stroke="url(#borderGrad)" stroke-width="1.5" opacity="0.4"/>
   <text x="30" y="24" class="panel-title">vinks@arch</text>
   <text x="524" y="24" class="panel-title">SYSTEM.CORE</text>
-
   <g mask="url(#revealMask)">
   <text class="ascii">
 <tspan x="64" y="66" xml:space="preserve">                   -`</tspan>
@@ -122,57 +106,29 @@
 <tspan x="64" y="462" xml:space="preserve"> .`                                 `/</tspan>
   </text>
   </g>
-
-  <g clip-path="url(#lc0)"><text x="520" y="0"><tspan x="520" y="42" class="head">vinks@arch</tspan><tspan class="cc"> -——————————————————————————————————————————-—-</tspan></text></g>
-  <g clip-path="url(#lc1)"><text x="520" y="0"><tspan x="520" y="66" class="cc">. </tspan><tspan class="key">Subject</tspan><tspan class="cc">: .......................... </tspan><tspan class="value">Vinks Goyal</tspan></text></g>
-  <g clip-path="url(#lc2)"><text x="520" y="0"><tspan x="520" y="88" class="cc">. </tspan><tspan class="key">Role</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">Full Stack Developer</tspan></text></g>
-  <g clip-path="url(#lc3)"><text x="520" y="0"><tspan x="520" y="110" class="cc">. </tspan><tspan class="key">Origin</tspan><tspan class="cc">: ........................... </tspan><tspan class="value">India</tspan></text></g>
-  <g clip-path="url(#lc4)"><text x="520" y="0"><tspan x="520" y="132" class="cc">. </tspan><tspan class="key">Status</tspan><tspan class="cc">: ............ </tspan><tspan class="value">Building • Shipping • Innovating</tspan></text></g>
-  <g clip-path="url(#lc5)"><text x="520" y="0"><tspan x="520" y="154" class="cc">. </tspan><tspan class="key">ToolChain</tspan><tspan class="cc">: ................. </tspan><tspan class="value">VS Code, Git, Docker, Supabase, Turbopack</tspan></text></g>
+  <g clip-path="url(#lc0)"><text x="520" y="0"><tspan x="520" y="42" class="head">vinks@arch</tspan><tspan class="cc"> ---</tspan></text></g>
+  <g clip-path="url(#lc1)"><text x="520" y="0"><tspan x="520" y="66" class="cc">. </t><tspan class="key">Subject</tspan><tspan class="cc">: .......................... </t><tspan class="value">Vinks Goyal</tspan></text></g>
+  <g clip-path="url(#lc2)"><text x="520" y="0"><tspan x="520" y="88" class="cc">. </t><tspan class="key">Role</tspan><tspan class="cc">: ............................. </t><tspan class="value">Full Stack Developer</tspan></text></g>
+  <g clip-path="url(#lc3)"><text x="520" y="0"><tspan x="520" y="110" class="cc">. </t><tspan class="key">Origin</tspan><tspan class="cc">: ........................... </tspan><tspan class="value">India</tspan></text></g>
+  <g clip-path="url(#lc4)"><text x="520" y="0"><tspan x="520" y="132" class="cc">. </t><tspan class="key">Status</tspan><tspan class="cc">: ............ </tspan><tspan class="value">Building • Shipping • Innovating</tspan></text></g>
+  <g clip-path="url(#lc5)"><text x="520" y="0"><tspan x="520" y="154" class="cc">. </t><tspan class="key">ToolChain</tspan><tspan class="cc">: ................. </tspan><tspan class="value">VS Code, Git, Docker, Supabase, Turbopack</tspan></text></g>
   <g clip-path="url(#lc6)"><text x="520" y="0"><tspan x="520" y="176" class="cc">. </t></text></g>
-  <g clip-path="url(#lc7)"><text x="520" y="0"><tspan x="520" y="198" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Lang</tspan><tspan class="cc">: .......... </tspan><tspan class="value">JavaScript, TypeScript, Python, Go, C++</tspan></text></g>
-  <g clip-path="url(#lc8)"><text x="520" y="0"><tspan x="520" y="220" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Frontend</tspan><tspan class="cc">: ...... </tspan><tspan class="value">React, Next.js, TypeScript, Tailwind, GraphQL</tspan></text></g>
-  <g clip-path="url(#lc9)"><text x="520" y="0"><tspan x="520" y="242" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Backend</tspan><tspan class="cc">: ....... </tspan><tspan class="value">Node.js, Express, Go Fiber, REST APIs</tspan></text></g>
-  <g clip-path="url(#lc10)"><text x="520" y="0"><tspan x="520" y="264" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Database</tspan><tspan class="cc">: ...... </tspan><tspan class="value">PostgreSQL, Redis, MongoDB, Supabase</tspan></text></g>
-  <g clip-path="url(#lc11)"><text x="520" y="0"><tspan x="520" y="286" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Infra</tspan><tspan class="cc">: ......... </tspan><tspan class="value">Docker, Kubernetes, Vercel, AWS, Cloudflare</tspan></text></g>
+  <g clip-path="url(#lc7)"><text x="520" y="0"><tspan x="520" y="198" class="cc">. </t><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Lang</tspan><tspan class="cc">: .......... </tspan><tspan class="value">JavaScript, TypeScript, Python, Go, C++</tspan></text></g>
+  <g clip-path="url(#lc8)"><text x="520" y="0"><tspan x="520" y="220" class="cc">. </t><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Frontend</tspan><tspan class="cc">: ...... </tspan><tspan class="value">React, Next.js, TypeScript, Tailwind, GraphQL</tspan></text></g>
+  <g clip-path="url(#lc9)"><text x="520" y="0"><tspan x="520" y="242" class="cc">. </t><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Backend</tspan><tspan class="cc">: ....... </tspan><tspan class="value">Node.js, Express, Go Fiber, REST APIs</tspan></text></g>
+  <g clip-path="url(#lc10)"><text x="520" y="0"><tspan x="520" y="264" class="cc">. </t><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Database</tspan><tspan class="cc">: ...... </tspan><tspan class="value">PostgreSQL, Redis, MongoDB, Supabase</tspan></text></g>
+  <g clip-path="url(#lc11)"><text x="520" y="0"><tspan x="520" y="286" class="cc">. </t><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Infra</tspan><tspan class="cc">: ......... </tspan><tspan class="value">Docker, Kubernetes, Vercel, AWS, Cloudflare</tspan></text></g>
   <g clip-path="url(#lc12)"><text x="520" y="0"><tspan x="520" y="308" class="cc">. </t></text></g>
-  <g clip-path="url(#lc13)"><text x="520" y="0"><tspan x="520" y="330" class="accent">- Secure Links</tspan><tspan class="cc"> -————————————————————————————————————————-—-</tspan></text></g>
-  
-  <g clip-path="url(#lc14)">
-    <a href="mailto:vinksgoyal@gmail.com" target="_blank">
-      <text x="520" y="352"><tspan class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Mail</tspan><tspan class="cc">: ....................... </tspan><tspan class="value">vinksgoyal@gmail.com</tspan></text>
-    </a>
-  </g>
-  <g clip-path="url(#lc15)">
-    <a href="[https://vinksgoyal.tech](https://vinksgoyal.tech)" target="_blank">
-      <text x="520" y="374"><tspan class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Portfolio</tspan><tspan class="cc">: .................. </tspan><tspan class="value">vinksgoyal.tech</tspan></text>
-    </a>
-  </g>
-  <g clip-path="url(#lc16)">
-    <a href="[https://linkedin.com/in/vinksgoyal](https://linkedin.com/in/vinksgoyal)" target="_blank">
-      <text x="520" y="396"><tspan class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">: ................... </tspan><tspan class="value">vinksgoyal</tspan></text>
-    </a>
-  </g>
-  <g clip-path="url(#lc17)">
-    <a href="[https://github.com/vinksgoyal](https://github.com/vinksgoyal)" target="_blank">
-      <text x="520" y="418"><tspan class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Github</tspan><tspan class="cc">: ..................... </tspan><tspan class="value">vinksgoyal</tspan></text>
-    </a>
-  </g>
-
+  <g clip-path="url(#lc13)"><text x="520" y="0"><tspan x="520" y="330" class="accent">- Secure Links</tspan><tspan class="cc"> ---</tspan></text></g>
+  <g clip-path="url(#lc14)"><text x="520" y="352"><tspan class="cc">. </t><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Mail</tspan><tspan class="cc">: ....................... </tspan><tspan class="value">vinksgoyal@gmail.com</tspan></text></g>
+  <g clip-path="url(#lc15)"><text x="520" y="374"><tspan class="cc">. </t><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Portfolio</tspan><tspan class="cc">: .................. </tspan><tspan class="value">vinksgoyal.tech</tspan></text></g>
+  <g clip-path="url(#lc16)"><text x="520" y="396"><tspan class="cc">. </t><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">: ................... </tspan><tspan class="value">vinksgoyal</tspan></text></g>
+  <g clip-path="url(#lc17)"><text x="520" y="418"><tspan class="cc">. </t><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Github</tspan><tspan class="cc">: ..................... </tspan><tspan class="value">vinksgoyal</tspan></text></g>
   <g clip-path="url(#lc18)"><text x="520" y="0"><tspan x="520" y="440" class="cc">. </t></text></g>
-  <g clip-path="url(#lc19)"><text x="520" y="0"><tspan x="520" y="462" class="accent">- System Status</tspan><tspan class="cc"> -—————————————————————————————————————————-—-</tspan></text></g>
-  <g clip-path="url(#lc20)"><text x="520" y="0"><tspan x="520" y="484" class="cc">. </tspan><tspan class="value">Ready for deployment... (check badges below)</tspan></text></g>
-
+  <g clip-path="url(#lc19)"><text x="520" y="0"><tspan x="520" y="462" class="accent">- System Status</tspan><tspan class="cc"> ---</tspan></text></g>
+  <g clip-path="url(#lc20)"><text x="520" y="0"><tspan x="520" y="484" class="cc">. </t><tspan class="value">Ready for deployment... (check badges below)</tspan></text></g>
   <rect x="522" y="469.0" width="9" height="16" class="cursor-blink" opacity="0">
     <animate attributeName="opacity" values="0;0;1;0;1;0;1;0" keyTimes="0;0.01;0.02;0.3;0.5;0.7;0.85;1" dur="1.4s" begin="3.2s" repeatCount="indefinite"/>
   </rect>
 </g>
-
-<rect x="0" y="-70" width="1180" height="70" fill="url(#scanGrad)" opacity="0.8" style="mix-blend-mode:screen">
-  <animateTransform attributeName="transform" type="translate" from="0 -70" to="0 680" dur="3.8s" repeatCount="indefinite"/>
-</rect>
-
-<rect x="3" y="3" width="1174" height="604" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="2" opacity="0.9">
-  <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
-</rect>
 </svg>
